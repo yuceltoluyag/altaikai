@@ -6,7 +6,10 @@
         "illuminate/database": "^5.8",
         "phpmailer/phpmailer": "^6.0"
     },
-    "autoload": {
+  "require-dev": {
+    "filp/whoops": "^2.3"
+  },
+  "autoload": {
         "psr-4": {
             "App\\" : "app"
         },

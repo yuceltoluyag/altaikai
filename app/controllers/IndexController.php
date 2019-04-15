@@ -11,19 +11,16 @@ class IndexController extends BaseController
     public function show()
     {
         echo 'Burası Ana Baba Günü';
-        $mail = new Mail();
-        $data = [
-            'to' => 'test@example.com',
-            'subject' => 'Hoşgeldiniz Biladerim',
-            'view'=>'welcome',
-            'body'=> 'Test Ediyoruz Email Şablonunu'
 
-        ];
-
+        /**
+         * Özel Hata Sayfası İçin Mail Fonksiyonu Eksik Yazıldı
+         * Test Edildi : Whoops
+         */
+     /* $mail = new Mail();
         if ($mail->send($data)) {
             echo 'email Başarıyla Gönderildi';
         } else {
             echo 'email Gönderilemedi';
-        }
+        }*/
     }
 }
