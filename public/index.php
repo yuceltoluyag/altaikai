@@ -10,4 +10,4 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 $bul = Capsule::table('musteriler')->get();
 
-var_dump($bul);
+//var_dump($bul);
