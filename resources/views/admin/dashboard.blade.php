@@ -21,6 +21,8 @@
                         {!! \App\Classes\CSRFToken::_token() !!}
                         <br />
                         {!! \App\Classes\Session::get('token') !!}
+                        <br />
+                        {{ \App\Classes\Redirect::to('/') }}
                     </div>
                 </div>
             </div>

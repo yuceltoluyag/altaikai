@@ -23,6 +23,9 @@
                         <br />
                         <?php echo \App\Classes\Session::get('token'); ?>
 
+                        <br />
+                        <?php echo e(\App\Classes\Redirect::to('/')); ?>
+
                     </div>
                 </div>
             </div>
