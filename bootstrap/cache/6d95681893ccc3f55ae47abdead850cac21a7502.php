@@ -15,7 +15,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="tile">
-                    <div class="tile-body">Vallaha De ? <?php echo e($admin); ?></div>
+                    <div class="tile-body">Vallaha De ? <?php echo e($admin); ?>
+
+                        <br />
+                        <?php echo \App\Classes\CSRFToken::_token(); ?>
+
+                        <br />
+                        <?php echo \App\Classes\Session::get('token'); ?>
+
+                    </div>
                 </div>
             </div>
         </div>
