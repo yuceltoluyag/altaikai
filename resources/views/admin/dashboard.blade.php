@@ -17,6 +17,11 @@
             <div class="col-md-12">
                 <div class="tile">
                     <div class="tile-body">Vallaha De ?
+                        <form action="/admin" method="post" enctype="multipart/form-data">
+                            <input name="product" value="test">
+                            <input type="file" name="image">
+                            <input type="submit" value="ekle" name="submit">
+                        </form>
                     </div>
                 </div>
             </div>
