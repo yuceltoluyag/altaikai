@@ -16,13 +16,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="tile">
-                    <div class="tile-body">Vallaha De ? {{ $admin }}
-                        <br />
-                        {!! \App\Classes\CSRFToken::_token() !!}
-                        <br />
-                        {!! \App\Classes\Session::get('token') !!}
-                        <br />
-                        {{ \App\Classes\Redirect::to('/') }}
+                    <div class="tile-body">Vallaha De ?
                     </div>
                 </div>
             </div>
