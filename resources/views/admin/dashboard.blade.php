@@ -1,5 +1,5 @@
 @extends('admin.layout.base')
-@section('title','Yönetici')
+@section('title','Yönetici Sayfası')
 
 @section('content')
     <main class="app-content">
