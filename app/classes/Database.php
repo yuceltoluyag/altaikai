@@ -8,16 +8,16 @@ class Database
 {
     public function __construct()
     {
-        $db = new Capsule;
+        $db = new Capsule();
         $db->addConnection([
-            'driver' => getenv('DB_DRIVER'),
-            'host' => getenv('DB_HOST'),
-            'database' => getenv('DB_NAME'),
-            'username' => getenv('DB_USERNAME'),
-            'password' => getenv('DB_PASSWORD'),
-            'charset'  => 'utf8',
+            'driver'    => getenv('DB_DRIVER'),
+            'host'      => getenv('DB_HOST'),
+            'database'  => getenv('DB_NAME'),
+            'username'  => getenv('DB_USERNAME'),
+            'password'  => getenv('DB_PASSWORD'),
+            'charset'   => 'utf8',
             'collation' => 'utf8_general_ci',
-            'prefix' => ''
+            'prefix'    => '',
         ]);
 
         $db->setAsGlobal();

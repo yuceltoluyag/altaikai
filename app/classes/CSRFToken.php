@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Classes;
-
 
 class CSRFToken
 {
@@ -18,9 +16,9 @@ class CSRFToken
 
     public static function verifyCSFToken($requestToken)
     {
-        if (Session::has('token') && Session::get('token') === $requestToken)
-        {
+        if (Session::has('token') && Session::get('token') === $requestToken) {
             Session::remove('token');
+
             return true;
         }
 

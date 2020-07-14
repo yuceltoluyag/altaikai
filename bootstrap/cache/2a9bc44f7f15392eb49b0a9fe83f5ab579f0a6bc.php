@@ -27,10 +27,11 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <?php if (count($customers)): ?>
+                            <?php if (count($customers)) { ?>
                                 <?php $__currentLoopData = $customers;
                                 $__env->addLoop($__currentLoopData);
-                                foreach ($__currentLoopData as $custom): $__env->incrementLoopIndices();
+                                foreach ($__currentLoopData as $custom) {
+                                    $__env->incrementLoopIndices();
                                     $loop = $__env->getLastLoop(); ?>
                                     <tr>
                                         <td><?php echo $custom->id; ?></td>
@@ -38,12 +39,13 @@
                                         <td><?php echo $custom->musteri_telefon; ?></td>
                                         <td><?php echo $custom->musteri_adres; ?></td>
                                     </tr>
-                                <?php endforeach;
+                                <?php
+                                }
                                 $__env->popLoop();
                                 $loop = $__env->getLastLoop(); ?>
-                            <?php else: ?>
+                            <?php } else { ?>
                                 <h2>Not Yet Add Category</h2>
-                            <?php endif; ?>
+                            <?php } ?>
                             </tbody>
                         </table>
                     </div>

@@ -1,4 +1,4 @@
-<?php $__env->startSection('title','Yönetici'); ?>
+<?php $__env->startSection('title', 'Yönetici'); ?>
 
 <?php $__env->startSection('content'); ?>
     <main class="app-content">

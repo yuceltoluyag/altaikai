@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Classes;
+
 class Request
 {
     public static function all($is_array = false)
@@ -20,6 +21,7 @@ class Request
     public static function get($key)
     {
         $data = self::all();
+
         return $data[$key];
     }
 
@@ -31,6 +33,7 @@ class Request
     public static function old($key, $value)
     {
         $data = self::all();
+
         return $data[$key][$value] ?? null;
     }
 

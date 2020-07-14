@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Classes;
-
 
 class Session
 {
@@ -31,9 +29,8 @@ class Session
 
     public static function remove()
     {
-        if (self::has($name)){
+        if (self::has($name)) {
             unset($_SESSION[$name]);
         }
     }
-
 }

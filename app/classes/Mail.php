@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Classes;
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -11,7 +10,7 @@ class Mail
 
     public function __construct()
     {
-        $this->mail = new PHPMailer;
+        $this->mail = new PHPMailer();
         $this->setUp();
     }
 
@@ -42,9 +41,10 @@ class Mail
 
     public function send($data)
     {
-        $this->mail->addAddress($data['to'],$data['name']);
+        $this->mail->addAddress($data['to'], $data['name']);
         $this->mail->Subject = $data['subject'];
-        $this->mail->Body = make($data['view'],array('data'=>$data['body']));
+        $this->mail->Body = make($data['view'], ['data'=>$data['body']]);
+
         return $this->mail->send();
     }
 }
